@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jesslambertappointments.view_controller.AppointmentAddScreenController">
+
+    <Label fx:id="customerNameLabel" layoutX="60" layoutY="80" text="Customer Name"></Label>
+    <ComboBox fx:id="customerNameCB" layoutX="165" layoutY="75" prefWidth="150.0" onAction="#getSelectedCust"/>
+    
+    <Label fx:id="userNameLabel" layoutX="60" layoutY="115" text="User Name"></Label>
+    <ComboBox fx:id="userNameCB" layoutX="165" layoutY="110" prefWidth="150.0" onAction="#getSelectedUser"/>
+    
+    <Label fx:id="typeLabel" layoutX="60" layoutY="150" text="Type"></Label>
+    <ComboBox fx:id="typeCB" layoutX="165" layoutY="145" prefWidth="150.0" onAction="#getSelectedType"/>
+     
+    <Label fx:id="dateLabel" layoutX="60" layoutY="185" text="Date"></Label>
+    <DatePicker fx:id="datePicker" layoutX="165" layoutY="180" prefWidth="150.0" onAction="#handleDatePicker" />
+       
+    <Label fx:id="startLabel" layoutX="60" layoutY="220" text="Start"></Label>
+    <ComboBox fx:id="startHour" layoutX="165" layoutY="215" />
+    <ComboBox fx:id="startMinute" layoutX="250" layoutY="215" />
+    
+    <Label fx:id="endLabel" layoutX="60" layoutY="255" text="End"></Label>
+    <ComboBox fx:id="endHour" layoutX="165" layoutY="250"/>
+    <ComboBox fx:id="endMinute" layoutX="250" layoutY="250"/>
+        
+    <HBox fx:id="addUserHBox" layoutX="225" layoutY="350">
+        <Button id="saveCustomer" styleClass="cmdbtna" text="Save" onAction="#addAppointmentClickSave" />
+        <Button id="cancelAddCustomer" styleClass="cmdbtna" text="Cancel" onAction="#addAppointmentCancel" />
+    </HBox>
+
+</AnchorPane>

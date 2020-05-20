@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jesslambertappointments.view_controller.UserMainScreenController">
+    
+    <Button fx:id="back" minHeight="30" text="&#8592; Back" layoutX="0" layoutY="0" alignment="TOP_LEFT" onAction="#goBack" />
+    
+    <Label fx:id="mainTitle" text="Manage Users" alignment="center" minWidth="600" layoutY="20" />
+    
+    <HBox prefHeight="200" layoutX="120" layoutY="75">
+        <TableView fx:id="usersTable" >
+            <columns>
+                <TableColumn fx:id="usersTableUserID" text="User ID" prefWidth="100" >
+                    </TableColumn>
+                <TableColumn fx:id="usersTableUserName" text="User Name" prefWidth="250" >
+                    </TableColumn>
+            </columns>    
+        </TableView>
+    </HBox>
+    
+    <HBox fx:id="userHBox" alignment="center" minWidth="600" layoutY="300">
+        <Button minHeight="30" minWidth="70" fx:id="addUserBtn" styleClass="cmdbtn" text="Add" onAction="#clickAddUserScreen" />
+        <Button minHeight="30" minWidth="70" fx:id="modUserBtn" styleClass="cmdbtn" text="Modify" onAction="#clickModUserScreen" />
+        <Button minHeight="30" minWidth="70" fx:id="DelUserBtn" styleClass="cmdbtn" text="Delete" onAction="#handleDelete" />
+    </HBox>
+    
+</AnchorPane>

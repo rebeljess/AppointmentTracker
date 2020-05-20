@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="300.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jesslambertappointments.view_controller.MainScreenController">
+    <Label fx:id="mainTitle" minWidth="600" alignment="center" layoutY="10" text="Appointment Scheduler" />
+    <HBox fx:id="horizontalBox" prefWidth="600.0" layoutY="60" alignment="center">
+        <VBox fx:id="userBox" minWidth="175" minHeight="175" alignment="center">
+            <Label fx:id="userTitle" text="Users" />
+            <Button minHeight="30" alignment="center" minWidth="150" fx:id="addUserBtn" text="Manage" onAction="#openUserScreen" />
+        </VBox>
+        <VBox fx:id="customerBox" minWidth="175" minHeight="175" alignment="center">
+            <Label fx:id="customerTitle" text="Customers" />
+            <Button minHeight="30" minWidth="150" fx:id="addCustomerBtn" text="Manage" onAction="#openCustomerScreen" />
+        </VBox>
+        <VBox fx:id="appointmentsBox" minWidth="175" minHeight="175" alignment="center">
+            <Label fx:id="appointmentTitle" text="Appointments" />
+            <Button minHeight="30" minWidth="150" fx:id="addAppointmentBtn" text="Manage" onAction="#openAppointmentScreen"/>
+        </VBox>
+    </HBox>
+    <HBox fx:id="bottomHBox" prefWidth="600.0" layoutY="250" alignment="BOTTOM_RIGHT">
+        <Button minHeight="30" minWidth="150" fx:id="reportsBtn" text="Go to Reports &#8594;" onAction="#openReportsScreen"/>
+    </HBox>
+</AnchorPane>

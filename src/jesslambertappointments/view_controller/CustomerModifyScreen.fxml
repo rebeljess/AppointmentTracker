@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jesslambertappointments.view_controller.CustomerModifyScreenController">
+       
+    <Label fx:id="customerNameLabel" layoutX="60" layoutY="80" text="Customer Name"></Label>
+    <TextField fx:id="customerNameField" layoutX="165" layoutY="75"></TextField>
+    
+    <Label fx:id="addressLabel" layoutX="60" layoutY="115" text="Address"></Label>
+    <TextField fx:id="addressField" layoutX="165" layoutY="110"></TextField>
+    
+    <Label fx:id="address2Label" layoutX="60" layoutY="150" text="Address"></Label>
+    <TextField fx:id="address2Field" layoutX="165" layoutY="145"></TextField>
+        
+    <Label fx:id="cityLabel" layoutX="60" layoutY="185" text="City"></Label>
+    <ComboBox fx:id="cityCB" layoutX="165" layoutY="180" onAction="#actionPerformed" promptText="Please choose city" />
+    
+    <Label fx:id="postalCode" layoutX="60" layoutY="220" text="Postal Code"></Label>
+    <TextField fx:id="postalCodeField" layoutX="165" layoutY="215"></TextField>
+        
+    <Label fx:id="phone" layoutX="60" layoutY="255" text="Phone"></Label>
+    <TextField fx:id="phoneField" layoutX="165" layoutY="250"></TextField>  
+        
+    <HBox fx:id="addUserHBox" layoutX="225" layoutY="350">
+        <Button id="saveCustomer" styleClass="cmdbtnc" text="Save" onAction="#modCustomerClickSave" />
+        <Button id="cancelAddCustomer" styleClass="cmdbtnc" text="Cancel" onAction="#modCustomerCancel" />
+    </HBox>
+
+</AnchorPane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="250.0" prefWidth="300.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jesslambertappointments.view_controller.LoginScreenController">
+   
+    <Label fx:id="loginTitle" minWidth="300" alignment="center" layoutY="10" text="Login"></Label>
+       
+    <Label fx:id="usernameID" layoutX="65" layoutY="55" text="User Name: "></Label>
+    <TextField fx:id="usernameInput" minWidth="170" layoutX="65" layoutY="75"></TextField>
+    
+    <Label fx:id="passwordID" layoutX="65" layoutY="120" text="Password: "></Label>
+    <PasswordField fx:id="passwordInput" minWidth="170" layoutX="65" layoutY="140"></PasswordField>    
+    
+    <Button minHeight="30" minWidth="170" fx:id="submitButton" layoutX="65" layoutY="190" text="Submit" onAction="#handleLogin" />
+    
+</AnchorPane>

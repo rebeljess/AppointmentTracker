@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jesslambertappointments.view_controller.AppointmentMainScreenController">
+    
+    <Button fx:id="back" minHeight="30" text="&#8592; Back" layoutX="0" layoutY="0" alignment="TOP_LEFT" onAction="#goBack" />
+    
+    <Label fx:id="mainTitle" text="Manage Appointment" alignment="center" minWidth="600" layoutY="20" />
+    
+    <TabPane prefHeight="400.0" prefWidth="500.0" layoutX="50" layoutY="50" tabClosingPolicy="UNAVAILABLE">
+        
+        <Tab fx:id="all" text="All Appointments">
+            <AnchorPane>
+                <children>
+                    <TableView fx:id="appointmentsTable" prefHeight="300.0" prefWidth="500.0">
+                        <columns>
+                            <TableColumn fx:id="appointmentsTableAppointmentID" text="Appt ID" prefWidth="40" >
+                                </TableColumn>
+                            <TableColumn fx:id="appointmentsTableCustomerID" text="Cust ID" prefWidth="40" >
+                                </TableColumn>
+                            <TableColumn fx:id="appointmentsTableUserID" text="User ID" prefWidth="40" >
+                                </TableColumn>
+                            <TableColumn fx:id="appointmentsTableAppointmentType" text="Appointment Type" prefWidth="90" >
+                                </TableColumn>
+                            <TableColumn fx:id="appointmentsTableStart" text="Start" prefWidth="140" >
+                                </TableColumn>
+                            <TableColumn fx:id="appointmentsTableEnd" text="End" prefWidth="140" >
+                                </TableColumn>
+                        </columns>    
+                    </TableView>
+                    <HBox fx:id="userHBox" alignment="center" minWidth="500" layoutY="300">
+                        <Button minHeight="30" minWidth="70" fx:id="addApptBtn" styleClass="cmdbtna" text="Add" onAction="#clickAddAppointmentScreen" />
+                        <Button minHeight="30" minWidth="70" fx:id="modApptBtn" styleClass="cmdbtna" text="Modify" onAction="#clickModAppointmentScreen" />
+                        <Button minHeight="30" minWidth="70" fx:id="DelApptBtn" styleClass="cmdbtna" text="Delete" onAction="#handleDelete" />
+                    </HBox>
+                </children>
+            </AnchorPane>
+        </Tab>
+        
+        <Tab fx:id="month" text="Appointments By Month">
+            <AnchorPane>
+                <children>
+                    <TableView fx:id="appointmentsMonthTable" prefHeight="300.0" prefWidth="500.0">
+                        <columns>
+                            <TableColumn fx:id="appointmentsMonthTableAppointmentID" text="Appointment ID" prefWidth="40" >
+                                </TableColumn>
+                            <TableColumn fx:id="appointmentsMonthTableCustomerID" text="Customer ID" prefWidth="40" >
+                                </TableColumn>
+                            <TableColumn fx:id="appointmentsMonthTableUserID" text="User ID" prefWidth="40" >
+                                </TableColumn>
+                            <TableColumn fx:id="appointmentsMonthTableAppointmentType" text="Appointment Type" prefWidth="90" >
+                                </TableColumn>
+                            <TableColumn fx:id="appointmentsMonthTableStart" text="Start" prefWidth="140" >
+                                </TableColumn>
+                            <TableColumn fx:id="appointmentsMonthTableEnd" text="End" prefWidth="140" >
+                                </TableColumn>
+                        </columns>    
+                    </TableView>
+                </children>
+            </AnchorPane>
+        </Tab>
+        
+        <Tab fx:id="week" text="Appointments By Week">
+            <AnchorPane>
+                <children>
+                    <TableView fx:id="appointmentsWeekTable" prefHeight="300.0" prefWidth="500.0">
+                        <columns>
+                            <TableColumn fx:id="appointmentsWeekTableAppointmentID" text="Appointment ID" prefWidth="40" >
+                                </TableColumn>
+                            <TableColumn fx:id="appointmentsWeekTableCustomerID" text="Customer ID" prefWidth="40" >
+                                </TableColumn>
+                            <TableColumn fx:id="appointmentsWeekTableUserID" text="User ID" prefWidth="40" >
+                                </TableColumn>
+                            <TableColumn fx:id="appointmentsWeekTableAppointmentType" text="Appointment Type" prefWidth="90" >
+                                </TableColumn>
+                            <TableColumn fx:id="appointmentsWeekTableStart" text="Start" prefWidth="140" >
+                                </TableColumn>
+                            <TableColumn fx:id="appointmentsWeekTableEnd" text="End" prefWidth="140" >
+                                </TableColumn>
+                        </columns>    
+                    </TableView>
+                </children>
+            </AnchorPane>
+        </Tab>
+    
+    </TabPane>
+      
+</AnchorPane>

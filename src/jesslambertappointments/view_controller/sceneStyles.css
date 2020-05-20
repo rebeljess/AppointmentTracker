@@ -1,0 +1,105 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 8, 2019, 6:48:21 AM
+    Author     : jess
+*/
+#AnchorPane{
+    -fx-background-color: #333;
+}
+#mainTitle{
+    -fx-font-family: "Helvetica";
+    -fx-font-weight: bold;
+    -fx-text-fill: #ccc;
+    -fx-font-size: 20;
+    -fx-font-weight: 900;
+}
+HBox{
+    -fx-spacing: 15;
+    -fx-padding: 5;
+    -fx-background-color: #333;
+}
+VBox{
+    -fx-spacing: 55;
+    -fx-padding: 5;
+    -fx-border-insets: 5;
+    -fx-border-radius: 5;
+}
+#customerBox{
+    -fx-background-color: #7E547E;
+    -fx-text-fill: #ccc;
+    -fx-font-size: 20;
+    -fx-font-weight: 900;
+}
+#userBox{
+    -fx-background-color: #2F5D8C;
+    -fx-text-fill: #ccc;
+    -fx-font-size: 20;
+    -fx-font-weight: 900;
+}
+#appointmentsBox{
+    -fx-background-color: #4F7474;
+    -fx-text-fill: #ccc;
+    -fx-font-size: 20;
+    -fx-font-weight: 900;
+}
+Button{
+    -fx-background-color: #333;
+    -fx-text-fill: #ccc;
+    -fx-font-size: 16;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+}
+.cmdbtn {
+    -fx-background-color: #2F5D8C;
+    -fx-text-fill: #ccc;
+    -fx-font-size: 16;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+}
+.cmdbtnc {
+    -fx-background-color: #7E547E;
+}
+.cmdbtna {
+    -fx-background-color: #4F7474;
+}
+Label {
+    -fx-text-fill: #ccc;
+    
+}
+.table-view .column-header .label {
+    -fx-alignment: center-left;
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 9;
+    -fx-text-fill: #333;
+
+}
+#TabPane{
+    -fx-background-color: #333;
+    -fx-opacity: 100;
+}
+.tab-pane > .tab-header-area > .headers-region > .tab:top {  
+    -fx-border-color: #333;  
+    -fx-border-width: 2;
+    
+    -fx-border-radius: 2 2 0 0;  
+    -fx-background-color: #4F7474;  
+    -fx-pref-height: 30px;    
+      
+    
+} 
+.tab-pane *.tab-header-background {
+    -fx-opacity: 0;
+}
+.tab-pane:focused > .tab-header-area > .headers-region > .tab:selected .focus-indicator {
+     
+     -fx-border-width: 1;
+     -fx-border-color: #7E547E;
+     
+}
+TextArea#apptContent {
+    -fx-font-family:monospace;
+}

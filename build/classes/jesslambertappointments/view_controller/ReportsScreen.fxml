@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jesslambertappointments.view_controller.ReportsScreenController">
+    
+    <Button fx:id="back" minHeight="30" text="&#8592; Back" layoutX="0" layoutY="0" alignment="TOP_LEFT" onAction="#goBack" />
+    
+    <Label fx:id="mainTitle" text="Reports" alignment="center" minWidth="600" layoutY="20" />
+    
+    <TabPane layoutX="50" layoutY="50" prefHeight="300.0" prefWidth="500.0" tabClosingPolicy="UNAVAILABLE">
+        
+        <Tab fx:id="apptByType" text="Appointments by Type">
+         
+            <TextArea fx:id="apptsContent" style="-fx-font-family:monospace;" />
+
+        </Tab>
+        
+        <Tab fx:id="userSchedules" text="User Schedules">
+            <TextArea fx:id="userSchedContent" style="-fx-font-family:monospace;" />
+        </Tab>
+        
+        <Tab fx:id="custAppt" text="Customer Appointments">
+            <TextArea fx:id="custApptContent" style="-fx-font-family:monospace;" />
+            
+        </Tab>
+    
+    </TabPane>
+</AnchorPane>

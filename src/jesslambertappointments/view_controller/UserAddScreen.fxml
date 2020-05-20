@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jesslambertappointments.view_controller.UserAddScreenController">
+    
+    <HBox layoutX="65" layoutY="40">
+        <RadioButton fx:id="activeUser" mnemonicParsing="false" onAction="#addActiveUser">
+            <toggleGroup>
+                <ToggleGroup fx:id="activeOrNot" />
+            </toggleGroup>
+        </RadioButton>
+        <Label fx:id="isActiveLabel" text="Active"></Label>
+        <RadioButton fx:id="notActive" mnemonicParsing="false" onAction="#addNotActiveUser" toggleGroup="$activeOrNot"></RadioButton>
+        <Label fx:id="notActiveLabel" text="Not Active"></Label>  
+    </HBox>    
+    
+    <Label fx:id="userIDLabel" layoutX="65" layoutY="80" text="User ID"></Label>
+    <TextField fx:id="userIDField" layoutX="165" layoutY="75" disable="true"></TextField>
+    
+    <Label fx:id="usernameLabel" layoutX="65" layoutY="110" text="User Name"></Label>
+    <TextField fx:id="usernameField" layoutX="165" layoutY="105"></TextField>
+    
+    <Label fx:id="passwordLabel" layoutX="65" layoutY="140" text="Password"></Label>
+    <TextField fx:id="passwordField" layoutX="165" layoutY="135"></TextField>
+        
+    <Label fx:id="createDateLabel" layoutX="65" layoutY="170" text="Create Date"></Label>
+    <TextField fx:id="createDateField" layoutX="165" layoutY="165" disable="true"></TextField>
+    
+    <Label fx:id="createdByLabel" layoutX="65" layoutY="200" text="Created By"></Label>
+    <TextField fx:id="createdByField" layoutX="165" layoutY="195" disable="true"></TextField>
+    
+    <Label fx:id="lastUpdateLabel" layoutX="65" layoutY="230" text="Last Update"></Label>
+    <TextField fx:id="lastUpdateField" layoutX="165" layoutY="225" disable="true"></TextField>
+        
+    <Label fx:id="lastUpdateByLabel" layoutX="65" layoutY="260" text="Last Update By"></Label>
+    <TextField fx:id="lastUpdateByField" layoutX="165" layoutY="255" disable="true"></TextField>  
+        
+    <HBox fx:id="addUserHBox" layoutX="225" layoutY="350">
+        <Button id="saveUser" styleClass="cmdbtn" text="Save" onAction="#addUserClickSave" />
+        <Button id="cancelAddUser" styleClass="cmdbtn" text="Cancel" onAction="#addUserCancel" />
+    </HBox>
+
+</AnchorPane>
